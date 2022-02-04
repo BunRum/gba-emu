@@ -54,7 +54,9 @@ function fileLoadShimCode(files, ROMHandler) {
     }
 }
 function fileLoadBIOS() {
+    console.log("bioload")
     fileLoadShimCode(this.files, attachBIOS);
+    console.log(this.files)
 }
 function fileLoadROM() {
     fileLoadShimCode(this.files, attachROM);
