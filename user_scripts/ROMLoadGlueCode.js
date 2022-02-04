@@ -62,6 +62,7 @@ function fileLoadROM() {
     fileLoadShimCode(this.files, attachROM);
 }
 function downloadFile(fileName, registrationHandler) {
+    console.log("downloading file" + fileName)
     var ajax = new XMLHttpRequest();
     ajax.onload = registrationHandler;
     ajax.open("GET", "./" + fileName, true);
